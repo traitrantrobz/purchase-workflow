@@ -1,0 +1,2 @@
+
+odoo-addon-purchase_discount @ git+https://github.com/OCA/purchase-workflow.git@refs/pull/2114/head#subdirectory=purchase_discount

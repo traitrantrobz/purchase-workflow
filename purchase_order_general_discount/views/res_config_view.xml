@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2019 Tecnativa - David Vidal
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="res_config_settings_view_form_purchase" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.purchase</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="25" />
+        <field
+            name="inherit_id"
+            ref="purchase.res_config_settings_view_form_purchase"
+        />
+        <field name="arch" type="xml">
+            <block name="purchase_setting_container" position="inside">
+                <setting
+                    id="purchase_general_discount_field"
+                >
+                    <div class="group-content">
+                        <span class="o_form_label">
+                            Purchase Discount Field
+                        </span>
+                        <span class="fa fa-lg fa-building-o" title="Values set here are company-specific."/>
+                        <div class="text-muted">
+                            Select to which purchase line field will the purchase general discount be propagated.
+                        </div>
+                        <field name="purchase_general_discount_field" />
+                    </div>  
+                </setting>
+            </block>
+        </field>
+    </record>
+
+</odoo>
