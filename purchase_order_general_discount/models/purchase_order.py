@@ -52,6 +52,8 @@ class PurchaseOrder(models.Model):
         There is a PR (https://github.com/odoo/odoo/pull/26607) to odoo for
         avoiding this. If merged, remove this method and add the attribute
         in the field.
+        With PR_26607 does not apply to the case of dynamic keys.
+        This function will still be retained for writing a context on 'order_line'
         """
         arch, view = super()._get_view(view_id=view_id, view_type=view_type, **options)
         if view_type == "form":
@@ -64,5 +66,5 @@ class PurchaseOrder(models.Model):
                     f"{{'default_{discount_field}': general_discount, ",
                     1,
                 )
-                order_line_field.attrib["context"] = context
+                order_line_field.set("context", context)
         return arch, view

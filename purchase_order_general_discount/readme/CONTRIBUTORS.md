@@ -14,3 +14,7 @@
 - [Komit](https://komit-consulting.com):
 
   - Cuong Nguyen Mtm \<<cuong.nmtm@komit-consulting.com>\>
+
+- [Trobz](https://trobz.com):
+
+  > - Tran Thanh Trai \<<traitt@trobz.com>\>

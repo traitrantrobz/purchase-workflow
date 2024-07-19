@@ -118,6 +118,10 @@ Contributors
 
    -  Cuong Nguyen Mtm <cuong.nmtm@komit-consulting.com>
 
+-  `Trobz <https://trobz.com>`__:
+
+      -  Tran Thanh Trai <traitt@trobz.com>
+
 Maintainers
 -----------
 

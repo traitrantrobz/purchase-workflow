@@ -11,27 +11,22 @@
             ref="purchase.res_config_settings_view_form_purchase"
         />
         <field name="arch" type="xml">
-            <xpath
-                expr="//div[@data-key='purchase']/div[hasclass('o_settings_container')][1]"
-                position="inside"
-            >
-                <div class="col-xs-12 col-6 o_setting_box">
-                    <div class="o_setting_right_pane">
-                        <label for="purchase_general_discount_field" />
-                        <span
-                            class="fa fa-lg fa-building-o"
-                            title="Values set here are company-specific."
-                            groups="base.group_multi_company"
-                        />
+            <block name="purchase_setting_container" position="inside">
+                <setting
+                    id="purchase_general_discount_field"
+                >
+                    <div class="group-content">
+                        <span class="o_form_label">
+                            Purchase Discount Field
+                        </span>
+                        <span class="fa fa-lg fa-building-o" title="Values set here are company-specific."/>
                         <div class="text-muted">
                             Select to which purchase line field will the purchase general discount be propagated.
                         </div>
-                        <div class="text-muted">
-                            <field name="purchase_general_discount_field" />
-                        </div>
-                    </div>
-                </div>
-            </xpath>
+                        <field name="purchase_general_discount_field" />
+                    </div>  
+                </setting>
+            </block>
         </field>
     </record>
 
